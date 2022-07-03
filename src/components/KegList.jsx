@@ -7,7 +7,7 @@ function KegList(props){
     <React.Fragment>  
       <hr/>
       {props.kegList.map((keg, index) =>
-        <Ticket names ={keg.names}
+        <Keg names ={keg.names}
         location={keg.location}
         issue={keg.issue}
         key={index}/>
@@ -16,7 +16,7 @@ function KegList(props){
   );
 }
 
-// Add propTypes for ticketList.
+// Add propTypes for kegList.
 KegList.protoTypes = {
   kegList: PropTypes.array
 };
