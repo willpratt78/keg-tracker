@@ -1,5 +1,6 @@
 import React from "react";
 import Keg from "./Keg";
+import PropTypes from 'prop-types'
 
 
 function KegList(props){
@@ -7,9 +8,10 @@ function KegList(props){
     <React.Fragment>  
       <hr/>
       {props.kegList.map((keg, index) =>
-        <Keg names ={keg.names}
-        location={keg.location}
-        issue={keg.issue}
+        <Keg name ={keg.name}
+        brand={keg.brand}
+        price={keg.price}
+        alcoholContent={keg.alcoholContent}
         key={index}/>
       )}
     </React.Fragment>
