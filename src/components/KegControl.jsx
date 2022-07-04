@@ -10,8 +10,13 @@ class KegControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       mainKegList: [],
-      selectedKeg: null
+      selectedKeg: null,
+      count: 0
     };
+  }
+
+  decrement = () => {
+    this.setState({ count: this.state.count - 1 });
   }
 
   handleClick = () => {

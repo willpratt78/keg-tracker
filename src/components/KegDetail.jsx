@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 function KegDetail(props){
   const { keg } = props;
@@ -7,9 +7,11 @@ function KegDetail(props){
   return (
     <React.Fragment>
       <h1>Keg Details</h1>
-      <h3>{props.name} by {props.brand}</h3>
-      <p>${props.price}</p>
-      <p>ABV is {props.alcoholContent}%</p>
+      <h3>{keg.name} by {keg.brand}</h3>
+      <p>${keg.price}</p>
+      <p>ABV is {keg.alcoholContent}%</p>
+      {/* <p>{this.state.count}</p> */}
+      {/* <button onClick={this.decrement}>Sell {keg.name}</button> */}
       <hr/>
     </React.Fragment>
   );
