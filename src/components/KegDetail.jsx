@@ -10,8 +10,6 @@ function KegDetail(props){
       <h3>{keg.name} by {keg.brand}</h3>
       <p>${keg.price}</p>
       <p>ABV is {keg.alcoholContent}%</p>
-      {/* <p>{this.state.count}</p> */}
-      {/* <button onClick={this.decrement}>Sell {keg.name}</button> */}
       <hr/>
     </React.Fragment>
   );
